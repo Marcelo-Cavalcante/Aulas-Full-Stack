@@ -4,20 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div{
+            font-family: 'Times New Roman', sans-serif;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color:rgb(35, 51, 46);
+            font-size: 3em;
+
+        }
+               table{
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 90%;
+        }
+        td,th{
+            border: 1px solid #fffbfb;
+            text-align: left;
+            padding: 8px;           
+        }
+        tr:nth-child(even){
+            background-color: rgb(253, 252, 253);
+        }
+        article {
+            text-align: center;
+            float:right;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+        }
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* only for demonstration, should be removed */            
+            }
+    </style>
 </head>
-<body>
-    <h1>Receitas</h1>
-    <p>
-        OBS: Deve conter duas receitas ou mais
-    </p>
+<!-- Cabeçalho -->
+<body style="background-color: rgb(209, 234, 226);">
+    <div style="background-image: url(Imagens/cake-with-chocolate-topping-cinnamon-sticks\ \(1\).jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;padding: 15px;text-align: center;">        
+    <h1 class="display-4" style="color: rgb(188, 254, 222); text-align: center;font-size: 100px;">Receitas de Bolos</h1>
+    <h2 class="display-4" style="color: rgb(188, 254, 222); text-align: center;font-size: 30px; font-size: 50px;">Receitas rápidas e preticas</h2>    
+    </div>
+    <br>
+        <!-- Tabela -->
+    <nav>
     <table border="1">
         <tr>
             <th>Foto</th>
+            <th>Receita</th>
             <th>Link</th>
         </tr>
         <tr>
             <td>
-                <img src="https://i.panelinha.com.br/i1/228-bk-9645-bolo-laranja.webp" width="100px" alt="">
+                <img src="https://i.panelinha.com.br/i1/228-bk-9645-bolo-laranja.webp" width="100px">
+            </td>
+            <td>
+                <p>Bolo de Laranja</p>
             </td>        
             <td>
                 <a href="bolo-laranja.html">
@@ -28,6 +74,9 @@
         <tr>        
             <td>
                 <img src="Imagens/bolo-de-chocolate-facil-e-barato-rspxk8nc.jpg" width="100px">
+            </td>
+            <td>
+                <p>Bolo de Chocolate</p>
             </td>        
             <td>
                 <a href="bolo-de-chocolate.html">
@@ -38,6 +87,9 @@
         <tr>
             <td>
                 <img src="Imagens/bolo-de-cenoura-fofinho.jpg" width="100px">
+            </td>
+            <td>
+                <p>Bolo de Cenoura</p>
             </td>        
             <td>
                 <a href="bolo-de-cenoura.html">
@@ -46,5 +98,10 @@
             </td>
         </tr>        
     </table>
+    </nav>
+    <article>        
+        <p style="text-align: center;font-size: 30px;">Bem-vindo ao nosso site! o maior site de receitas!</p>
+            <p style="text-align: center; font-size: 30px;">Aqui você encontra diversas receitas fáceis e rápidas para o seu dia a dia.</p>
+      </article>
 </body>
 </html>
